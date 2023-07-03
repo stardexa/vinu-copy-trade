@@ -1,0 +1,17 @@
+FROM node:18.12-alpine
+
+RUN mkdir /app
+
+WORKDIR /app
+
+COPY ./package.json /app/
+
+RUN npm install
+
+COPY . /app/
+
+EXPOSE 4002
+
+RUN APP_ENV=preview npm run build
+
+CMD [ "npm", "run", "start:preview", "--", "--port", "4002" ]

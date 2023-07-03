@@ -1,0 +1,9 @@
+.imgEnd{
+  position: absolute;
+  right: 0;
+  display: inline;
+  margin-top: -8rem;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}

@@ -1,0 +1,6 @@
+@mixin card-default{
+  background-color: var(--color-card);
+  border-radius: var(--border-d-radius);
+  color: var(--color-white);
+  position: relative;
+}

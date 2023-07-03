@@ -1,0 +1,41 @@
+{
+  "name": "vinu-sales-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "build:analyze": "npm run build && source-map-explorer .next/static/**/*.js",
+    "postbuild": "next-sitemap",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@next/font": "^13.1.6",
+    "aos": "^2.3.4",
+    "next": "^13.1.6",
+    "next-i18next": "^13.0.3",
+    "next-seo": "^5.15.0",
+    "next-sitemap": "^3.1.48",
+    "nodemailer": "^6.9.1",
+    "react": "^18.2.0",
+    "react-circle-flags": "^0.0.18",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-modern-drawer": "^1.2.0",
+    "react-tabs": "^6.0.0",
+    "sharp": "^0.31.3",
+    "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.4",
+    "@types/node": "18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1",
+    "sass": "^1.57.1"
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "CONTACT.breadcrumb": "HEIMAT > KONTAKT",
+    "CONTACT.title": "KONTAKTIERE UNS",
+    "CONTACT.subTitle": "Kontakt",
+    "CONTACT.addressBoxTitle": "Länder, die wir bedienen",
+    "CONTACT.addressBoxDesc": "Wir bieten Krypto-Softwarelösungen für die wichtigsten Länder der Welt an.",
+    "CONTACT.detail": "Für weitere Informationen zur Einführung einer erfolgreichen Cryptocurrency Exchange Software oder um mehr über die von unseren Kunden eingesetzte Technologie zu erfahren, kontaktieren Sie uns bitte jederzeit.",
+    "CONTACT.address": "Istanbul, Türkei",
+    "CONTACT.phone": "0212 555 243 421",
+    "CONTACT.email": "info@vinusoft.com",
+
+    "CONTACT.inputEmail": "EMAIL",
+    "CONTACT.inputSubject": "GEGENSTAND",
+    "CONTACT.inputMessage": "BOTSCHAFT",
+    "CONTACT.inputButton": "SENDEN",
+
+
+    "CONTACT.tagline": "Kontaktiere uns",
+    "CONTACT.formTitle": "Wir würden gerne von Ihnen hören!",
+
+    "CONTACT.campaignTitle": "Erfahren Sie mehr über den Austausch",
+    "CONTACT.campaignDesc": "Siehe börsenbezogene Informationen im Detail",
+    "CONTACT.campaignButtonTitle": "Siehe Detail"
+}

@@ -1,0 +1,43 @@
+{
+    "SERVICES.breadcrumb": "HOME > SERVICES",
+    "SERVICES.title": "Services Detail",
+
+    "SERVICES.exchangeTagline": "TAGLINE",
+    "SERVICES.exchangeTitle": "We have a more detailed page for Cryptocurrency Exchange Platform Software",
+    "SERVICES.exchangeButton": "Action link >",
+
+    "SERVICES.serviceTitle1": "Cryptocurrency Exchange Software",
+    "SERVICES.serviceDesc1": "Trust platform development services to create the most effective Cryptocurrency Exchange software. Our Cryptocurrency Exchange solution easily outperforms with our 6 years of experience and advanced source code. The Cryptocurrency Exchange(CEX/DEX) solution offers a highly secure, scalable and privately available option. <br><br> The development process of the cryptocurrency exchange platform, which allows the trade of 500+ digital assets with the customizations preferred by the project owner, is progressing in accordance with the roadmap. Bank integration studies can also be carried out for transactions with fiat money. You can find detailed information about this process on the exchange page.<br>With customer-specific UI/UX design, both web and mobile application experience are served in different language options. Apart from the options available in the Cryptocurrency Exchange listings, external are optionally available: Advanced Technical Analysis Tools, Expert Advisors, Advanced Alert System, Social Media Integration, Support Desk (third party) and more. To guide the option that suits the business purposes after meeting with our team.<br><br><b> Why choose Vinu? </b><br><br>The Timely Progress Of The Software Process,<br>Expert And Experienced In Crypto And Blockchain,<br>Long-Standing Development, Updating And Testing Results Of Our Software Solutions,<br>Personal Project Manager And Development Team,<br>High Reliability And Quality Standards,<br>Customizable Solutions and more<br>",
+
+    "SERVICES.serviceTitle2": "Exchange Module Solutions",
+    "SERVICES.serviceDesc2": "You may already have a CEX/DEX platform, but you may need some additional tools. Considering the current structure of your platform, the most suitable solution is developed according to your business needs and this module is integrated into the platform after passing through the testing phase.<br><br>Our software platform's modular architecture makes it suitable for multiple types of businesses. Modules can be combined to create a solution that fits your needs perfectly. We also have the capacity to provide long-term technical support as well as perform any custom development for platform additional functionality.<br><br>Algorithmic Trade Bot<br>Wealth System<br>",
+
+    "SERVICES.serviceTitle3": "Token Development",
+    "SERVICES.serviceDesc3": "Tokens are created on an existing blockchain with smart contracts enabled. Crypto tokens are distributed in the standard ICO Process.<br><br>Vinu lets you navigate your token development journey by building a new blockchain from the ground up. It offers a comprehensive, task-oriented approach to token development, from choosing the exact blockchain to equipping the blockchain's internal architecture to provide efficient management at every stage of crypto token development.<br><br>From idea generation to token launch and marketing, we have real-world experience in industry hosts to provide our clients with comprehensive offerings on token development services. Our token development services include Non-Fungible Token(NFT) Development, DeFi Token Development, BEP-20 Token Development, and Cryptocurrency Development.<br><br>After you create your tokens, you are the owner of them, You can send them, burn them or stake them. <br>",
+
+    "SERVICES.serviceTitle4": "Smart Contract Development",
+    "SERVICES.serviceDesc4": "Traditional contracts are often on paper and require many layers of human approval to become legally binding, so they are time-consuming, expensive, and often open to opposition.<br><br>Smart contracts embedded in blockchains ensure that the contract terms of a deal are automatically enforced without interference from a trusted third party. Since the identities of the contract holders are not published on the network, two parties from anywhere in the world can instantly create a trusted contract for any business or other activity.<br><br>Vinu aims to create the best smart contract architecture by eliminating bugs and security vulnerabilities to ensure that Smart Contracts give the expected result. It develops customized, self-executing business contracts across a wide range of public, private, and hybrid blockchains aligned with the needs of different business sectors.",
+
+    "SERVICES.serviceTitle5": "Regulation Solutions",
+    "SERVICES.serviceDesc5": "It is very important to plan to license quickly in the markets in which your exchange operates and to ensure that it uses the most appropriate KYC/AML systems.<br>",
+
+    "SERVICES.serviceTitle6": "Listing Platform Solutions",
+    "SERVICES.serviceDesc6": "Our expert cryptocurrency exchange listing team will serve you during the listing of your coin or coin on all major exchanges. Thanks to our professional cryptocurrency exchange listing services, all the details and requirements in the process of listing your project on the cryptocurrency exchanges in the sector are met by us. Also, if you have a cryptocurrency exchange and request projects to be listed, we support you in determining your requirements and conditions and managing the process.<br>",
+
+    "SERVICES.serviceTitle7": "Crypto Pay Systems",
+    "SERVICES.serviceDesc7": "Cryptocurrencies make it possible to transfer value online without the need for an intermediary such as a bank or payment processor.",
+
+    "SERVICES.serviceTitle8": "Enterprise Crypto Solutions",
+    "SERVICES.serviceDesc8": "The Vinu Team helps you improve your business processes and workflows in the best possible way, using the latest technological innovations to adapt to the ever-changing and never-ending business environment.<br>We strive to provide excellent user experience in every aspect by integrating front-end and back-end solutions for your business information.<br><br>We develop and maintain a wide variety of software that helps projects achieve their goals. For this, we work with various programming languages and platforms and new technologies that suit your needs.<br><br>We can create any app that meets your needs. Our systems mainly include: Web and Mobile clientsi Apı Server, Matching Engines, Admin Panel, Crypto and Fiat Wallets, Market Maker Services, Databases, VPN Solutions, Event buses…<br>",
+
+    "SERVICES.serviceTitle9": "Blockchain Based Solutions",
+    "SERVICES.serviceDesc9": "Vinu team of experts allows you to explore blockchain technology and create frameworks and designs.",
+
+    "SERVICES.serviceTitle10": "Web 3.0 Solutions",
+    "SERVICES.serviceDesc10": "Collaborate with us to create Web 3.0 solutions such as DeFi, DAO, NFT Marketplace that help your business stay ahead.",
+
+
+    "SERVICES.campaignTitle": "We have a more detailed page for Cryptocurrency Exchange Software",
+    "SERVICES.campaignDesc": "Contact us for detailed information about our services.",
+    "SERVICES.campaignButtonTitle": "Contact Us"
+}

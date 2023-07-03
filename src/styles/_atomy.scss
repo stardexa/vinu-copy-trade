@@ -1,0 +1,26 @@
+$spacings: (1,2,3,4,5,10,auto);
+
+$sides: (
+        't': 'top',
+        'b': 'bottom',
+        'l': 'left',
+        'r': 'right',
+        'a': ('top', 'left', 'bottom', 'right'),
+        'x': ('left', 'right'),
+        'y': ('top', 'bottom'),
+);
+
+@each $space in $spacings {
+  @each $prefix, $positions in $sides {
+    .p#{$prefix}-#{$space} {
+      @each $pos in $positions {
+        padding-#{$pos}: if($space == auto, $space, #{$space }rem);
+      }
+    }
+    .m#{$prefix}-#{$space} {
+      @each $pos in $positions {
+        margin-#{$pos}: if($space == auto, $space, #{$space }rem);
+      }
+    }
+  }
+}

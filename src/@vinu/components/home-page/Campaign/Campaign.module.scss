@@ -1,0 +1,17 @@
+.heroCard{
+  width: 100%;
+  min-height: 500px;
+  background: var(--color-background-primary-linear-left);
+  border-radius:var(--border-xl-radius);
+  padding: 5rem;
+  @media screen and (max-width: 1400px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 992px) {
+    width: 100%;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+}

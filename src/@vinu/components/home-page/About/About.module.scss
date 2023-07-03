@@ -1,0 +1,17 @@
+.seeDetail{
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+  margin-top: 1rem;
+  display: block;
+  &:hover{
+    font-size: 18px;
+    &:after{
+      content: "⮕";
+      margin-left: 10px;
+    }
+  }
+}

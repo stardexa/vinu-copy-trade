@@ -1,0 +1,67 @@
+.sidenav {
+  color: var(--color-primary);
+  height: 100%;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1.75rem;
+  background: var(--color-background);
+
+  .sideButtons {
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 215px;
+    p {
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+
+}
+
+.sidenavMenu {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.icons {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+
+}
+
+.sidenavBottom {
+  text-align: center;
+  padding-bottom: 5rem;
+  p {
+    letter-spacing: 4px;
+    font-size: 13px;
+    color: white;
+
+  }
+}
+
+.social-media-wrapper {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  margin: 10px 20px auto;
+
+  a {
+    color: white;
+    text-align: center;
+  }
+}
+
+.sidenavHeader{
+  display: flex;
+  justify-content: space-between;
+  .selft-start{
+    align-items: self-start!important;
+  }
+}

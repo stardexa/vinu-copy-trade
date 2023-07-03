@@ -1,0 +1,40 @@
+.securityLeft {
+  background: var(--color-background-primary-linear-left);
+  border-radius: var(--border-m-radius);
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.securityRight {
+  width: 80%;
+
+  tr, td {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin: auto;
+  }
+}
+
+.loaderSeo {
+  width: 100px;
+  height: 22px;
+  background: white;
+  display: block;
+  margin: 5px 5px
+}
+
+.loaderPerformance {
+  width: 180px;
+  height: 22px;
+  background: var(--color-primary-linear);
+  margin: 5px 5px;
+  display: block;
+}

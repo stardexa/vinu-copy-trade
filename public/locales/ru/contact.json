@@ -1,0 +1,24 @@
+{
+    "CONTACT.breadcrumb": "ДОМ > КОНТАКТ",
+    "CONTACT.title": "СВЯЖИТЕСЬ С НАМИ",
+    "CONTACT.subTitle": "Контакт",
+    "CONTACT.addressBoxTitle": "Страны, которые мы обслуживаем",
+    "CONTACT.addressBoxDesc": "Мы предлагаем криптографические программные решения для основных стран мира.",
+    "CONTACT.detail": "Для получения дополнительной информации о запуске успешного программного обеспечения для обмена криптовалютой или о технологиях, используемых нашими клиентами, свяжитесь с нами в любое время.",
+    "CONTACT.address": "Стамбул, Турция",
+    "CONTACT.phone": "0212 555 243 421",
+    "CONTACT.email": "info@vinusoft.com",
+
+    "CONTACT.inputEmail": "ЭЛ. АДРЕС",
+    "CONTACT.inputSubject": "ПРЕДМЕТ",
+    "CONTACT.inputMessage": "СООБЩЕНИЕ",
+    "CONTACT.inputButton": "ОТПРАВИТЬ",
+
+
+    "CONTACT.tagline": "Свяжитесь с нами",
+    "CONTACT.formTitle": "Мы хотели бы услышать от вас!",
+
+    "CONTACT.campaignTitle": "Узнать больше об обмене",
+    "CONTACT.campaignDesc": "Подробнее см. информацию, связанную с обменом",
+    "CONTACT.campaignButtonTitle": "См детали"
+}

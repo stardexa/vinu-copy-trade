@@ -1,0 +1,100 @@
+ .bigText{
+   width: 50%;
+   display: flex;
+   flex-flow: column;
+   margin-left: auto;
+   word-break: break-word;
+   span{
+     font-size: clamp(4rem, 10vw, 9rem);
+     font-weight: 600;
+     text-align: end;
+     line-height: 1.1;
+     color: var(--color-primary);
+   }
+
+  @media screen and (max-width: 1040px) {
+    text-align: center;
+    flex-flow: wrap-reverse;
+    width: 100%;
+    span{
+      text-align: center;
+    }
+  }
+}
+.cryptoService{
+  padding: 0 5rem;
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  div{
+    position: relative;
+    width: max-content;
+    span{
+      width: 50px;
+      height: 20px;
+      border-radius: 30%;
+      background: var(--color-primary-linear);
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: -15px;
+    }
+    p{
+      width: fit-content;
+      position: relative;
+      margin: 20px;
+      font-size: 20px;
+      padding: 7px 40px;
+      z-index: 2;
+      background: rgba( 255, 255, 255, 0.05 );
+      box-shadow: 0 8px 32px 0 rgb(31 38 135 / 4%);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 10px;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      transition: all .5s ease;
+      &:hover{
+        font-size: 23px;
+      }
+    }
+  }
+  @media screen and (min-width: 1640px) {
+    padding-left: 5rem;
+  }
+  @media screen and (max-width: 1040px) {
+    width: fit-content;
+    padding: 0 2rem;
+    div{
+      width: 100%;
+    }
+    p{
+      font-size: 16px!important;
+      text-align: left;
+    }
+  }
+}
+
+.customContainer{
+  display: flex;
+  .cardContainer{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    margin-left: auto;
+  }
+  @media screen and (max-width: 1040px) {
+    flex-flow: column;
+    .cardContainer{
+      width: 100%;
+    }
+  }
+}
+.wrapBox{
+  margin-left: auto;
+}
+.rightBox{
+  margin-right: auto;
+}

@@ -1,0 +1,24 @@
+{
+    "CONTACT.breadcrumb": "ANASAYFA > İLETİŞİM",
+    "CONTACT.title": "BİZE ULAŞIN",
+    "CONTACT.subTitle": "İLETİŞİM",
+    "CONTACT.addressBoxTitle": "Hizmet Verdiğimiz Ülkeler",
+    "CONTACT.addressBoxDesc": "Dünyanın belli başlı ülkelerine kripto yazılım çözümleri sunuyoruz.",
+    "CONTACT.detail": "Başarılı bir Cryptocurrency Exchange Yazılımı başlatma hakkında daha fazla bilgi için veya müşterilerimiz tarafından kullanılan teknoloji hakkında daha fazla bilgi edinmek için lütfen istediğiniz zaman bizimle iletişime geçin.",
+    "CONTACT.address": "İstanbul/Turkey",
+    "CONTACT.phone": "0212 555 243 421",
+    "CONTACT.email": "info@vinusoft.com",
+
+    "CONTACT.inputEmail": "E-POSTA",
+    "CONTACT.inputSubject": "KONU",
+    "CONTACT.inputMessage": "MESAJ",
+    "CONTACT.inputButton": "GÖNDER",
+
+
+    "CONTACT.tagline": "BİZE ULAŞIN",
+    "CONTACT.formTitle": "Sizden Geri Dönüş Almayı Çok İsteriz!",
+
+    "CONTACT.campaignTitle": "Değişim hakkında daha fazla bilgi edinin",
+    "CONTACT.campaignDesc": "Değişimle ilgili bilgileri ayrıntılı olarak görün",
+    "CONTACT.campaignButtonTitle": "Ayrıntıları gör"
+}

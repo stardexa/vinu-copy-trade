@@ -1,0 +1,41 @@
+.flyImage{
+  position: absolute;
+  left: 0;
+  object-fit: cover;
+  width: 47%;
+  @media screen and (max-width: 1024px) {
+    position: inherit!important;
+    width: 100%!important;
+    flex-flow: wrap!important;
+    height: auto!important;
+  }
+}
+.clearBoth{
+  clear: both;
+  display: block;
+}
+.imgResponsive{
+  height: 670px;
+
+  @media screen and (max-width: 1024px) {
+    flex-flow: wrap;
+    height: auto;
+  }
+}
+.fullImage{
+  width: 100%;
+  height: 100vh;
+  background: url(/assets/images/others/fullImage.webp);
+  background-size: cover;
+}
+.wrapResponsive{
+  width: 80%;
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    padding-bottom: 5rem;
+  }
+}

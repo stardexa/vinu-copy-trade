@@ -1,0 +1,68 @@
+.porfolioCard{
+  $border: 2px;
+  display: flex;
+  //align-items: center;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  padding: 5rem;
+  color: #FFF;
+  background: var(--color-background);
+  background-clip: padding-box; /* !importanté */
+  border: solid $border transparent; /* !importanté */
+  border-radius: var(--border-m-radius);
+  @media screen and (max-width: 1024px) {
+    flex-flow: column;
+    padding: 3rem 2rem;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -$border; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: linear-gradient(to right, #201790, #6FB5F6);
+  }
+
+}
+.sideBar{
+  width: 33%;
+  color: #57585f;
+  @media screen and (max-width: 1024px) {
+    //width: 90%;
+    margin: auto;
+    width: fit-content; 
+    text-align: center;
+}
+  h4{
+    transition: all 0.3s;
+    &:hover{
+      color: white;
+    }
+  }
+}
+.activeLink{
+  color: white;
+  position: relative;
+  &:before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-primary-linear);
+    z-index: 1;
+    position: absolute;
+    left: -20px;
+    top: 7px;
+  }
+}
+.imageBar{
+  width: fit-content;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  img{
+    margin:1rem;
+  }
+}

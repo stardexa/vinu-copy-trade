@@ -1,0 +1,43 @@
+.footer {
+  background: url("/assets/images/others/footer-bg.webp");
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+   .social-media-wrapper{
+     display: flex;
+     gap: 1rem;
+     justify-content: center;
+     margin: 30px 20px auto;
+     a{
+       color: white;
+       text-align: center;
+     }
+   }
+  p{
+    letter-spacing: 6px;
+  }
+}
+
+.subLink{
+  padding:0 1rem;
+ a{
+   &:after{
+     content: "-";
+     margin: 0 8px;
+   }
+   &:last-child:after {
+     content: "";
+   }
+
+ }
+}
+.linkd{
+  color: white!important;
+  transition: all 0.1s;
+  &:hover{
+    font-weight: 600;
+  }
+}
