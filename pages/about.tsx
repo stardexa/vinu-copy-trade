@@ -3,7 +3,6 @@ import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 import {NextSeo, NextSeoProps} from "next-seo";
 import {useTranslation} from "next-i18next";
 import AboutDetail from "../src/@vinu/components/about-page/AboutDetail";
-import SubPageCampaign from "../src/@vinu/components/general-components/SubPageCampaign";
 
 const metaTags: NextSeoProps = {
     title: 'Vinusoft | Advanced Crypto Software Solutions',
@@ -25,12 +24,6 @@ const AboutPage = () => {
             {/*</div>*/}
             <AboutDetail/>
             {/*<Portfolio />*/}
-            <SubPageCampaign
-                title={t('ABOUT.campaignTitle')}
-                desc={t('ABOUT.campaignTitle')}
-                buttonTitle={t('ABOUT.campaignButtonTitle')}
-                buttonUrl={'/services'}
-            />
         </>
     )
 }

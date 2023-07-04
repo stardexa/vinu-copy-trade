@@ -1,13 +1,13 @@
-import { NextSeoProps } from 'next-seo'
-import { domain, socialMedia } from '../config/main'
+import {NextSeoProps} from 'next-seo'
+import {domain, socialMedia} from '../config/main'
 
 // Meta tag Constants
-const pageTitle = 'Vinusoft | Experienced Crypto Solutions'
-const pageDesc = 'As a blockchain development company, we offer turnkey technology services and customized solutions for crypto and blockchain.'
+const pageTitle = 'Vinusoft | Copy Trade'
+const pageDesc = 'Automate your cryptocurrency investments with the best crypto copy trading platform. Follow the strategies of professional traders and maximize your earnings.'
 const twitterUsername = '@vinusoftware'
 const siteName = 'Vinu Software'
 // const twitterAppCard = {
-//     appleStoreName: 'Vinusoft | Experienced Crypto Solutions',
+//     appleStoreName: 'Vinusoft | Copy Trade',
 //     appleStoreID: '1569267465',
 //     playStoreName: 'Vinu Software',
 //     playStoreID: 'com.vinu.vinusoftapp',
@@ -16,10 +16,10 @@ const logoURL = `${domain.default}/assets/images/logo/logo.svg`
 const fullLogoUrl = `${domain.default}/assets/images/logo/logo.svg`
 
 // Structured Data Constants
-const LDname = 'Vinusoft | Experienced Crypto Solutions'
-const foundingDate = '2016'
+const LDname = 'Vinusoft | Copy Trade'
+const foundingDate = '2023'
 const supportPage = `${domain.default}/contact`
-const supportEmail = 'info@vinusoft.com'
+const supportEmail = 'copytrade@vinusoft.com'
 
 /*
 Burdaki meta tagler uygulamanın her sayfasında yer alıyor.
@@ -36,7 +36,7 @@ export const defaultMetaTags: NextSeoProps = {
         images: [
             {
                 url: logoURL,
-                alt: 'Vinusoft | Experienced Crypto Solutions',
+                alt: 'Vinusoft | Copy Trade',
             },
         ],
     },
@@ -48,7 +48,7 @@ export const defaultMetaTags: NextSeoProps = {
     },
 
     additionalMetaTags: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+        {name: 'viewport', content: 'width=device-width, initial-scale=1.0'},
         {
             name: 'google-site-verification',
             content: 'SCQ-cdn01PHaGRhJ0gIi-ov5VGwU5naBM6Aqbz64_1w',
@@ -82,7 +82,7 @@ export function generateAltUrls(
         hrefLang: local === defaultLang ? 'x-default' : local,
     }))
 
-    return { currentUrl, alternateUrls }
+    return {currentUrl, alternateUrls}
 }
 
 export const mainLdJson = {
