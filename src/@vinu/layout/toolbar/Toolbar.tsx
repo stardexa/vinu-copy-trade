@@ -23,7 +23,6 @@ const Toolbar: React.FC<ToolbarProps> = ({toggleDrawer}) => {
 
     return (
         <>
-
             <div className="bg-animation">
                 <div id="stars"/>
                 <div id="stars2"/>
@@ -44,36 +43,37 @@ const Toolbar: React.FC<ToolbarProps> = ({toggleDrawer}) => {
                         <HiMenuAlt4 fontSize={25}/>
                     </button>
                     <div className={styles.navMenu}>
-                        <div className={'d-flex mr-1'}>
+                        <div className={'d-flex'}>
                             {toolbarNav.map((link) => (
                                 <Link key={link.label} href={{pathname: link.route}} className={styles.navigationItem}>
                                     {t(link.label)}
                                 </Link>
                             ))}
                         </div>
-                        <button
-                            ref={ref}
-                            className='btn-icon'
-                            onClick={() =>
-                                setOpen(!open)
-                            }
-                        >
-                            <CircleFlag
-                                countryCode={
-                                    locale === 'en'
-                                        ? 'us'
-                                        : locale === 'ko'
-                                            ? 'kr'
-                                            : locale!
-                                }
-                                alt={'Cryptocurrency exchange software'}
-                                height='30'
-                                width='30'
-                            />
-                            {open &&
-                                <DropdownMenu open={open}/>
-                            }
-                        </button>
+                        {/*DİL MENÜSÜ İLERİDE AKTİF OLUCAK*/}
+                        {/*<button*/}
+                        {/*    ref={ref}*/}
+                        {/*    className='btn-icon'*/}
+                        {/*    onClick={() =>*/}
+                        {/*        setOpen(!open)*/}
+                        {/*    }*/}
+                        {/*>*/}
+                        {/*    <CircleFlag*/}
+                        {/*        countryCode={*/}
+                        {/*            locale === 'en'*/}
+                        {/*                ? 'us'*/}
+                        {/*                : locale === 'ko'*/}
+                        {/*                    ? 'kr'*/}
+                        {/*                    : locale!*/}
+                        {/*        }*/}
+                        {/*        alt={'Cryptocurrency exchange software'}*/}
+                        {/*        height='30'*/}
+                        {/*        width='30'*/}
+                        {/*    />*/}
+                        {/*    {open &&*/}
+                        {/*        <DropdownMenu open={open}/>*/}
+                        {/*    }*/}
+                        {/*</button>*/}
                     </div>
 
                 </div>

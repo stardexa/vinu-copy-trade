@@ -1,6 +1,6 @@
 .navMenu {
   display: none;
-  background: var(--color-background-primary-linear-right);
+  background: var(--color-card);
   border-radius: var(--border-d-radius);
   @media screen and (min-width: 1024px) {
     display: flex;
@@ -15,15 +15,19 @@
   height: 100%;
   display: flex;
   align-items: center;
-  margin: 0 15px!important;
+  padding: 0 25px!important;
   color: var(--color-white)!important;
   justify-content: center;
   transition: all .5s;
   &:hover {
-   background:#0C0935;
+   background:#2a2b33;
     color: white;
     padding: 0 30px;
     border-radius: var(--border-d-radius)
+  }
+  &:nth-last-child(1){
+    background: var(--color-primary);
+    border-radius: var(--border-d-radius);
   }
 }
 

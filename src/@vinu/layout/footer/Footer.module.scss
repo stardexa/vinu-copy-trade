@@ -1,43 +1,24 @@
-.footer {
-  background: url("/assets/images/others/footer-bg.webp");
-  width: 100%;
-  height: 500px;
+.footerBox{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
-   .social-media-wrapper{
-     display: flex;
-     gap: 1rem;
-     justify-content: center;
-     margin: 30px 20px auto;
-     a{
-       color: white;
-       text-align: center;
-     }
-   }
+  margin-top: 5rem;
+  padding: 0 2rem;
+  border-radius: var(--border-d-radius);
+  position: relative;
+  min-height: 80px;
+}
+.footerBg{
+
+  background: var(--color-card);
+  width: 100%;
+}
+.footerLogo{
+  position: absolute;
+  top: -2rem;
   p{
-    letter-spacing: 6px;
-  }
-}
+  letter-spacing: 5px;
 
-.subLink{
-  padding:0 1rem;
- a{
-   &:after{
-     content: "-";
-     margin: 0 8px;
-   }
-   &:last-child:after {
-     content: "";
-   }
-
- }
-}
-.linkd{
-  color: white!important;
-  transition: all 0.1s;
-  &:hover{
-    font-weight: 600;
+    color: white;
   }
 }

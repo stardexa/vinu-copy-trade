@@ -1,0 +1,13 @@
+.verifyBox{
+  width: 100%;
+  min-height: 300px;
+  background: var(--color-card);
+  border-radius: var(--border-m-radius);
+  padding: 2rem;
+  position: relative;
+}
+.verifyImage{
+  position: absolute;
+  top: -2rem;
+  right: 1rem;
+}

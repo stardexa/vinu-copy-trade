@@ -3,70 +3,61 @@ import { MdOutlineHomeRepairService, MdPermContactCalendar } from 'react-icons/m
 
 export const toolbarNav = [
     {
-        label: 'MENU.home',
+        label: 'Home',
         route: '/',
     },
     {
-        label: 'MENU.about',
+        label: 'Watchlist',
+        route: '/watchlist',
+    },
+    {
+        label: 'Portfolio',
+        route: '/portfolio',
+    },
+    {
+        label: 'Action',
         route: '/about',
-    },
-    {
-        label: 'MENU.services',
-        route: '/services',
-    },
-    {
-        label: 'MENU.exchangeFeatures',
-        route: '/exchange-features',
-    },
-    {
-        label: 'MENU.contact',
-        route: '/contact',
     },
 ]
 export const sidenav = [
     {
-        label: 'MENU.home',
+        label: 'Home',
         route: '/',
         icon: FaHome,
     },
     {
-        label: 'MENU.about',
-        route: '/about',
+        label: 'Watchlist',
+        route: '/watchlist',
         icon: FaInfo,
     },
     {
-        label: 'MENU.services',
-        route: '/services',
+        label: 'Portfolio',
+        route: '/portfolio',
         icon: MdOutlineHomeRepairService,
     },
     {
-        label: 'MENU.exchangeFeatures',
-        route: '/exchange-features',
+        label: 'Action',
+        route: '/about',
         icon: FaBitcoin,
-    },
-    {
-        label: 'MENU.contact',
-        route: '/contact',
-        icon: MdPermContactCalendar,
     },
 ]
 
 export const footerNav = [
     {
-        label: 'MENU.about',
+        label: 'Home',
+        route: '/',
+    },
+    {
+        label: 'Watchlist',
+        route: '/watchlist',
+    },
+    {
+        label: 'Portfolio',
+        route: '/portfolio',
+    },
+    {
+        label: 'Action',
         route: '/about',
-    },
-    {
-        label: 'MENU.services',
-        route: '/services',
-    },
-    {
-        label: 'MENU.exchangeFeatures',
-        route: '/exchange-features',
-    },
-    {
-        label: 'MENU.contact',
-        route: '/contact',
     },
 ]
 

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import {GetStaticProps} from "next";
 import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 import {NextSeo, NextSeoProps} from "next-seo";
+import VerifyAccount from "../src/@vinu/components/index/VerifyAccount";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ const Home = () => {
             <Head>
                 <NextSeo {...metaTags} />
             </Head>
+            <VerifyAccount/>
         </>
     )
 }

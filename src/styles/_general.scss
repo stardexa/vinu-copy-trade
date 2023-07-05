@@ -1,6 +1,6 @@
 //-------------------------------------------------------------------------------------
-// Vinu v1
-// Copyright 2022 FuturX
+// Vinu Copy Trade v1
+// Copyright 2023 FuturX
 //-------------------------------------------------------------------------------------
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;700;900&display=swap');
 
@@ -8,39 +8,32 @@
   //Container
   --container-max: 1500px;
   //Custom Colors
-  --color-background: #0E101A;
-  --color-background-primary: #201892;
-  --color-background-primary-linear-left: linear-gradient(90deg, rgba(32, 23, 149, 1) 0%, rgba(32, 23, 149, 0) 95%);
-  --color-background-primary-linear-right: linear-gradient(260deg, rgba(32, 23, 149, 1) 0%, rgba(32, 23, 149, 0) 100%);
-  --color-background-primary-linear-top: linear-gradient(182deg, rgb(32, 23, 149) 0%, rgba(32, 23, 149, 0) 56%);
-  --color-background-primary-linear-cross: linear-gradient(150deg, rgb(32, 23, 149) 0%, rgba(32, 23, 149, 0) 56%);
-  --color-background-primary-linear-second-top: linear-gradient(180deg, rgb(32, 23, 149, 1) 0%, rgba(32, 23, 149, 0) 100%);
+  --color-background: #141618;
   //background: rgb(32,23,149);
-  --color-primary: #639CE6;
-  --color-primary-linear: linear-gradient(90deg, rgba(32, 23, 144, 1) 0%, rgba(111, 181, 246, 1) 100%);
-  --color-secondary: #989AA4;
+  --color-primary: #211895;
+  --color-secondary: #83848B;
+  --color-tertiary: #12C473;
   //Radius
+  --border-xs-radius: 4px;
   --border-d-radius: 12px;
   --border-m-radius: 24px;
   --border-xl-radius: 48px;
 
   //---------------------
   //--color-primary: #991A33;
-  --color-primary-container: hsl(346, 66%, 30%, 0.20);
-  --color-on-primary-container: #991A33;
-  --color-tertiary: #12C473;
-  --color-gray: #27292F;
   --color-card: #1C1D22;
+  --color-desc: #83848B;
+  --color-danger: #FF2D55;
+  --color-success: #11CF79;
+  --color-success-text: #11CF79;
+  --color-gray: #27292F;
   --color-white: #fff;
-  --color-desc: #989AA4;
-  --color-danger: #e01717;
-  --color-success: green;
   //Radius
   //--border-d-radius: 12px;
   --border-m-radius: 24px;
   --border-xl-radius: 48px;
   //Font
-  --font-family: 'Source Code Pro', monospace;;
+  --font-family:'SF Pro Display Regular', Arial, sans-serif;
   --font-size-normal: 14px;
 
   // Typography
@@ -75,6 +68,10 @@ body {
   background-color: var(--color-background) !important;
 }
 
+p{
+  color: var(--color-desc);
+
+}
 //------------------
 // General CSS
 //------------------
@@ -139,7 +136,8 @@ body {
 .btn {
   background: none;
   //width: 100%;
-  padding: 12px 38px;
+  //padding: 12px 38px;
+  padding: 10px 24px;
   border: none;
   transition: all 0.5s;
 
@@ -185,6 +183,24 @@ body {
     border-radius: var(--border-d-radius);
     color: var(--color-white);
     font-family: var(--font-family);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    text-decoration: none;
+    width: fit-content;
+
+    &:hover {
+      opacity: 0.3;
+      border: dashed 1px var(--color-white);
+    }
+  }
+  &-success-outline {
+    border: 2px solid var(--color-success);
+    border-radius: var(--border-xs-radius);
+    color: var(--color-success-text);
+    font-family: var(--font-family);
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
