@@ -1,0 +1,38 @@
+.classicCard{
+  background: var(--color-card);
+  border-radius: var(--border-d-radius);
+  padding: 1rem;
+}
+.nameWrapped{
+  display: flex;
+  align-items: center;
+  gap:0.5rem;
+  h3{
+    line-height: 1;
+  }
+}
+.customPlusButton{
+  background: #27292F;
+  color: #99999F;
+  width: 26px;
+  border: none;
+  margin-left:0.7rem;
+  border-radius: var(--border-xs-radius);
+  &:hover{
+    background: #383B43;
+  }
+}
+.iconGap{
+  margin-right: 0.5rem;
+}
+.customRiskButton{
+  background: #1A4133;
+  color: #11CF79;
+  font-size: 12px;
+  padding: 0.2rem 0.7rem;
+  border: none;
+  border-radius: var(--border-xs-radius);
+  &:hover{
+    background: #2c6953;
+  }
+}

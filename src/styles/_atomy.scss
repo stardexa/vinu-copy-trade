@@ -1,4 +1,4 @@
-$spacings: (1,2,3,4,5,10,auto);
+$spacings: (0_5,1,2,3,4,5,10,auto);
 
 $sides: (
         't': 'top',
@@ -24,3 +24,6 @@ $sides: (
     }
   }
 }
+
+.mt-05{margin-top:0.5rem}
+.ml-05{margin-left:0.5rem}

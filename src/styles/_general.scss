@@ -70,7 +70,10 @@ body {
 
 p{
   color: var(--color-desc);
-
+}
+hr{
+  margin-top: 0.5rem;
+  border: solid 0.1px #2C2D34;
 }
 //------------------
 // General CSS
@@ -111,6 +114,13 @@ p{
     font-family: var(--font-family);
     //font-size: clamp(0.594rem, 2vw, 0.95rem);
     font-size: clamp(0.84rem, 2vw, 0.95rem);
+    font-weight: 500;
+    color: var(--color-secondary);
+  }
+  &-xxs {
+    font-family: var(--font-family);
+    //font-size: clamp(0.594rem, 2vw, 0.95rem);
+    font-size: clamp(0.70rem, 2vw, 0.80rem);
     font-weight: 500;
     color: var(--color-secondary);
   }
@@ -249,6 +259,11 @@ p{
   justify-content: center;
 }
 
+.flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .flex-end {
   display: flex;
   align-items: center;
@@ -261,6 +276,15 @@ p{
   flex-flow: wrap;
 }
 
+.flex-column {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  justify-content: center;
+  &[datatype="end"]{
+    align-items: end;
+  }
+}
 .flex-column-center {
   display: flex;
   align-items: center;
@@ -360,6 +384,12 @@ p{
   margin-inline: auto;
   @media screen and (max-width: 1024px) {
     width: min(100% - 2rem, var(--container-max, 60ch));
+  }
+}
+.container-fluid {
+  width: 100%;
+  &[datatype="cardBg"] {
+    background: var(--color-card);
   }
 }
 
