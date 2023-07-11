@@ -1,0 +1,26 @@
+.classicCard{
+  background: var(--color-card);
+  border-radius: var(--border-d-radius);
+  padding: 1rem 1.5rem;
+}
+.nameWrapped{
+  display: flex;
+  align-items: center;
+  img{
+    margin-right: 1rem;
+  }
+  h3{
+    line-height: 1;
+  }
+}
+.customPlusButton{
+  background: #27292F;
+  color: #99999F;
+  width: 26px;
+  border: none;
+  margin-left:0.7rem;
+  border-radius: var(--border-xs-radius);
+  &:hover{
+    background: #383B43;
+  }
+}

@@ -6,7 +6,7 @@ import user2img from '../../../../../public/assets/images/profile/user2.svg'
 import user3img from '../../../../../public/assets/images/profile/user3.svg'
 import user4img from '../../../../../public/assets/images/profile/user4.svg'
 import SuccessChart from '../../../../../public/assets/images/others/successChart.svg'
-import GreenFire from "../../../../../public/assets/images/others/green-fire.svg";
+import GreenFire from "../../../../../public/assets/images/others/greenFire.svg";
 
 const SimpleCard = () => {
     // const {t} = useTranslation('index')

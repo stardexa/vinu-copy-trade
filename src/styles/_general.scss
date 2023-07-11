@@ -121,7 +121,7 @@ hr{
     font-family: var(--font-family);
     //font-size: clamp(0.594rem, 2vw, 0.95rem);
     font-size: clamp(0.70rem, 2vw, 0.80rem);
-    font-weight: 500;
+    font-weight: 400;
     color: var(--color-secondary);
   }
 
@@ -246,6 +246,11 @@ hr{
 .between-center {
   display: flex;
   justify-content: space-between;
+  align-items: center
+}
+.evenly-center {
+  display: flex;
+  justify-content: space-evenly;
   align-items: center
 }
 
@@ -594,6 +599,9 @@ hr{
   top: 13%;
 }
 
+.gap-05 {
+  gap: 0.5rem;
+}
 .gap-1 {
   gap: 1rem;
 }

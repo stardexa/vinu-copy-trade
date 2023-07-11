@@ -27,14 +27,3 @@
     background: #383B43;
   }
 }
-.flexColumnStart{
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-flow: column;
-}
-.customCardWrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
-  grid-gap: 2em;
-}

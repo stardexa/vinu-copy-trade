@@ -6,6 +6,9 @@ import VerifyAccount from "../src/@vinu/components/index/VerifyAccount";
 import ClassicCard from "../src/@vinu/components/index/ClassicCard";
 import HeaderBox from "../src/@vinu/components/general-components/HeaderBox";
 import SimpleCard from "../src/@vinu/components/index/SimpleCard";
+import BoldCard from "../src/@vinu/components/index/BoldCard";
+import ElegantCard from "../src/@vinu/components/index/ElegantCard";
+import GroupOf3Cards from "../src/@vinu/components/index/GroupOf3Cards";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -31,6 +34,13 @@ const Home = () => {
                 date={'7gün'}
             />
             <SimpleCard/>
+            <BoldCard/>
+            <HeaderBox
+                title={'Top Holding'}
+                date={''}
+            />
+            <ElegantCard/>
+            <GroupOf3Cards/>
         </>
     )
 }

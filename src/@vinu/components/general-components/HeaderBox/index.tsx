@@ -2,7 +2,7 @@ import {useTranslation} from 'next-i18next'
 import styles from './HeaderBox.module.scss'
 import {useState} from "react";
 import Image from 'next/image';
-import GreenFireImg from '../../../../../public/assets/images/others/green-fire.svg'
+import GreenFireImg from '../../../../../public/assets/images/others/greenFire.svg'
 
 const HeaderBox = ({title,date}) => {
 
