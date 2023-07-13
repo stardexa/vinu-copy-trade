@@ -22,7 +22,7 @@ const AboutDetail = () => {
                     </div>
                     <div data-aos="fade-left">
                         <p>{t('ABOUT.desc1')}</p>
-                        <p clavssName={'color-desc mt-1'}>{t('ABOUT.desc2')}</p>
+                        <p className={'color-desc mt-1'}>{t('ABOUT.desc2')}</p>
                     </div>
                 </div>
 

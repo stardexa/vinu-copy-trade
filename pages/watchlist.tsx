@@ -2,50 +2,36 @@ import Head from 'next/head'
 import {GetStaticProps} from "next";
 import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 import {NextSeo, NextSeoProps} from "next-seo";
-import VerifyAccount from "../src/@vinu/components/index/VerifyAccount";
-import ClassicCard from "../src/@vinu/components/index/ClassicCard";
 import HeaderBox from "../src/@vinu/components/general-components/HeaderBox";
-import SimpleCard from "../src/@vinu/components/index/SimpleCard";
-import BoldCard from "../src/@vinu/components/index/BoldCard";
 import ElegantCard from "../src/@vinu/components/index/ElegantCard";
-import GroupOf3Cards from "../src/@vinu/components/index/GroupOf3Cards";
+import CryptoTable from "../src/@vinu/components/watchlist/CryptoTable";
 
 // const inter = Inter({ subsets: ['latin'] })
 
 //Her sayfa için ayrı seo taglarını bu şekilde kullanabiliyoruz
 const metaTags: NextSeoProps = {
-    title: 'Vinusoft | Experienced Crypto Solutions',
-    description: 'Automate your cryptocurrency investments with the best crypto copy trading platform. Follow the strategies of professional traders and maximize your earnings.',
+    title: 'Vinusoft | Copy Trade',
+    description: 'As a blockchain development company, we offer turnkey technology services and customized solutions for crypto and blockchain.',
 }
 
-const Home = () => {
+const WatchList = () => {
     return (
         <>
             <Head>
                 <NextSeo {...metaTags} />
             </Head>
-            <VerifyAccount/>
-            <HeaderBox
-                title={'ROI’ye Göre En İyi Yatırımcılar'}
-                date={'7gün'}
-            />
-            <ClassicCard/>
-            <HeaderBox
-                title={'Takipçilerine En Yüksek Kâr Kazandıran Yatırımcılar'}
-                date={'7gün'}
-            />
-            <SimpleCard/>
-            <BoldCard/>
             <HeaderBox
                 title={'Top Holding'}
                 date={''}
             />
             <ElegantCard/>
-            <GroupOf3Cards/>
+            <CryptoTable/>
+
+
         </>
     )
 }
-export default Home
+export default WatchList
 
 // Todo:Dil ekledigimizde aktif yapılcak
 // export const getStaticProps: GetStaticProps = async ({locale}) => {

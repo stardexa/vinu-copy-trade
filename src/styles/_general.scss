@@ -312,6 +312,9 @@ hr{
     margin-top: 1rem;
   }
 }
+.text-start {
+  text-align: start;
+}
 
 .fw-700 {
   font-weight: 700;
@@ -448,10 +451,13 @@ hr{
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 100px) {
     grid-template-columns: repeat(1, 1fr);
   }
   @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: 1230px) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -670,6 +676,12 @@ hr{
   border-bottom: none !important;
   margin: 0;
 }
+
+
+//table
+
+//table
+
 
 //border-left: 2px solid red !important;
 //outline: none !important;

@@ -18,10 +18,7 @@ const AboutDetail = () => {
                         <Image src={VerifyImg} className={styles.verifyImage} alt={'Cryptocurrency exchange software'} width={300}
                                data-aos="fade-right"/>
                     </div>
-
                 </div>
-
-
             </div>
         </>
     )
