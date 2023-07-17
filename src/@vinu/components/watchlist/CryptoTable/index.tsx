@@ -6,6 +6,7 @@ import ethImg from '../../../../../public/assets/images/coin/eth.svg'
 import usdtImg from '../../../../../public/assets/images/coin/usdt.svg'
 import xrpImg from '../../../../../public/assets/images/coin/xrp.svg'
 import LongGreenChart from '../../../../../public/assets/images/others/longGreenChart.svg'
+import AddList from "../AddList";
 
 const CryptoTable = () => {
     // const {t} = useTranslation('index')
@@ -120,6 +121,8 @@ const CryptoTable = () => {
                         </tbody>
                     </table>
                 </div>
+
+                <AddList title={'Add Watch Crypto List'}/>
             </div>
         </>
     )

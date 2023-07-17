@@ -1,0 +1,28 @@
+.profileBox{
+  background: var(--color-card);
+  width: 100%;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-radius: var(--border-d-radius);
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nameWrapped{
+  display: flex;
+  align-items: end;
+  img{
+    margin-right: 1rem;
+    margin-top: -4rem;
+  }
+  h1{
+    line-height: 1;
+  }
+}
+.featureBox{
+
+  h3{
+    line-height: 1;
+  }
+}

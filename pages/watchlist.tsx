@@ -5,6 +5,9 @@ import {NextSeo, NextSeoProps} from "next-seo";
 import HeaderBox from "../src/@vinu/components/general-components/HeaderBox";
 import ElegantCard from "../src/@vinu/components/index/ElegantCard";
 import CryptoTable from "../src/@vinu/components/watchlist/CryptoTable";
+import PeopleTable from "../src/@vinu/components/watchlist/PeopleTable";
+import AddList from "../src/@vinu/components/watchlist/AddList";
+import TabView from "../src/@vinu/components/general-components/TabView";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +18,20 @@ const metaTags: NextSeoProps = {
 }
 
 const WatchList = () => {
+    // TabView kullanırken type olarak component veya content
+    // olarak belirttigimizde ona göre işlem yaparak size sonuç verir content diyerek html girdi yapılabilir
+    const tabData = [
+        {
+            tabTitle: 'Kripto Tablosu',
+            type: 'component',
+            content: CryptoTable,
+        },
+        {
+            tabTitle: 'Kullanıcılar Tablosu',
+            type: 'component',
+            content: PeopleTable,
+        },
+    ];
     return (
         <>
             <Head>
@@ -25,9 +42,7 @@ const WatchList = () => {
                 date={''}
             />
             <ElegantCard/>
-            <CryptoTable/>
-
-
+            <TabView data={tabData} />
         </>
     )
 }

@@ -1,0 +1,19 @@
+.tabButtons{
+  background: var(--color-card);
+  width: max-content;
+  margin: auto;
+  border-radius: var(--border-xs-radius);
+  padding: 0.4rem;
+  button{
+    background: none;
+    border: none;
+    color: #99999F;
+    padding: 0.2rem 3rem!important;
+  }
+  .activeTab{
+    background: #27292F;
+    color: white;
+    padding: 0 2rem;
+    border-radius: var(--border-xs-radius);
+  }
+}

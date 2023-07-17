@@ -11,8 +11,8 @@ export const toolbarNav = [
         route: '/watchlist',
     },
     {
-        label: 'Portfolio',
-        route: '/portfolio',
+        label: 'Profile',
+        route: '/profile',
     },
     {
         label: 'Action',
@@ -31,8 +31,8 @@ export const sidenav = [
         icon: FaInfo,
     },
     {
-        label: 'Portfolio',
-        route: '/portfolio',
+        label: 'Profile',
+        route: '/profile',
         icon: MdOutlineHomeRepairService,
     },
     {
@@ -52,8 +52,8 @@ export const footerNav = [
         route: '/watchlist',
     },
     {
-        label: 'Portfolio',
-        route: '/portfolio',
+        label: 'Profile',
+        route: '/profile',
     },
     {
         label: 'Action',
