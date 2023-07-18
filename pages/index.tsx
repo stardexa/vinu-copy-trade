@@ -3,11 +3,11 @@ import {GetStaticProps} from "next";
 import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 import {NextSeo, NextSeoProps} from "next-seo";
 import VerifyAccount from "../src/@vinu/components/index/VerifyAccount";
-import ClassicCard from "../src/@vinu/components/index/ClassicCard";
+import ClassicCard from "../src/@vinu/components/cards/ClassicCard";
 import HeaderBox from "../src/@vinu/components/general-components/HeaderBox";
-import SimpleCard from "../src/@vinu/components/index/SimpleCard";
-import BoldCard from "../src/@vinu/components/index/BoldCard";
-import ElegantCard from "../src/@vinu/components/index/ElegantCard";
+import SimpleCard from "../src/@vinu/components/cards/SimpleCard";
+import BoldCard from "../src/@vinu/components/cards/BoldCard";
+import ElegantCard from "../src/@vinu/components/cards/ElegantCard";
 import GroupOf3Cards from "../src/@vinu/components/index/GroupOf3Cards";
 
 // const inter = Inter({ subsets: ['latin'] })

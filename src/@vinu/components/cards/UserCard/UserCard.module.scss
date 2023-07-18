@@ -27,3 +27,11 @@
     background: #383B43;
   }
 }
+.customCardWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+  grid-gap: 2em;
+}
+.flagObject{
+  object-fit: contain;
+}

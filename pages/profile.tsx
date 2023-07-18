@@ -3,6 +3,11 @@ import {GetStaticProps} from "next";
 import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 import {NextSeo, NextSeoProps} from "next-seo";
 import ProfileTopBox from "../src/@vinu/components/profile/ProfileTopBox";
+import Statistics from "../src/@vinu/components/profile/Statistics";
+import WhoCopied from "../src/@vinu/components/profile/WhoCopied";
+import Portfolio from "../src/@vinu/components/profile/Portfolio";
+import Chart from "../src/@vinu/components/profile/Chart";
+import TabView from "../src/@vinu/components/general-components/TabView";
 
 
 
@@ -13,6 +18,30 @@ const metaTags: NextSeoProps = {
 }
 
 const WatchList = () => {
+    // TabView kullanırken type olarak component veya content
+    // olarak belirttigimizde ona göre işlem yaparak size sonuç verir content diyerek html girdi yapılabilir
+    const tabData = [
+        {
+            tabTitle: 'Statistics',
+            type: 'component',
+            content: Statistics,
+        },
+        {
+            tabTitle: 'Portfolio',
+            type: 'component',
+            content: Portfolio,
+        },
+        {
+            tabTitle: 'Who Copied',
+            type: 'component',
+            content: WhoCopied,
+        },
+        {
+            tabTitle: 'Chart',
+            type: 'component',
+            content: Chart,
+        },
+    ];
 
     return (
         <>
@@ -22,6 +51,7 @@ const WatchList = () => {
 
             <div className={'container'}>
                 <ProfileTopBox/>
+                <TabView data={tabData} />
             </div>
         </>
     )

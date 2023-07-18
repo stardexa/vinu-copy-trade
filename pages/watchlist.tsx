@@ -3,7 +3,7 @@ import {GetStaticProps} from "next";
 import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 import {NextSeo, NextSeoProps} from "next-seo";
 import HeaderBox from "../src/@vinu/components/general-components/HeaderBox";
-import ElegantCard from "../src/@vinu/components/index/ElegantCard";
+import ElegantCard from "../src/@vinu/components/cards/ElegantCard";
 import CryptoTable from "../src/@vinu/components/watchlist/CryptoTable";
 import PeopleTable from "../src/@vinu/components/watchlist/PeopleTable";
 import AddList from "../src/@vinu/components/watchlist/AddList";

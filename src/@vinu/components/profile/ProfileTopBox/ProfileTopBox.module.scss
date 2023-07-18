@@ -1,4 +1,4 @@
-.profileBox{
+.profileBox {
   background: var(--color-card);
   width: 100%;
   padding: 2rem;
@@ -7,22 +7,35 @@
   display: flex;
   gap: 2rem;
   align-items: center;
+  justify-content: space-between;
+  -webkit-box-shadow: -9px 10px 0px 1px rgba(31, 32, 36, 1);
+  -moz-box-shadow: -9px 10px 0px 1px rgba(31, 32, 36, 1);
+  box-shadow: -9px 10px 0px 1px rgba(31, 32, 36, 1);
 }
 
-.nameWrapped{
+.nameWrapped {
   display: flex;
   align-items: end;
-  img{
+
+  img {
     margin-right: 1rem;
     margin-top: -4rem;
   }
-  h1{
+
+  h1 {
     line-height: 1;
   }
 }
-.featureBox{
 
-  h3{
-    line-height: 1;
+.featureBox {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  div {
+    h3 {
+      line-height: 1;
+    }
   }
+
 }
