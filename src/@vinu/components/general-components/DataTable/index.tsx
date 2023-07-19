@@ -2,6 +2,31 @@ import React, { useState } from 'react';
 import { useTable, useGlobalFilter, useSortBy, usePagination } from 'react-table';
 import styles from './DataTable.module.scss'
 
+//üst sayfa için
+// const columns = [
+//     {
+//         Header: 'Name',
+//         accessor: 'name',
+//     },
+//     {
+//         Header: 'Age',
+//         accessor: 'age',
+//     },
+//     // Diğer sütunlar...
+// ];
+//
+// const data = [
+//     {
+//         name: 'John Doe',
+//         age: 28,
+//     },
+//     {
+//         name: 'Jane Smith',
+//         age: 32,
+//     },
+//     // Diğer veriler...
+// ];
+
 const DataTable = ({ columns, data }) => {
     const {
         getTableProps,
@@ -32,6 +57,25 @@ const DataTable = ({ columns, data }) => {
 
     const { globalFilter, pageIndex, pageSize } = state;
 
+
+    //5 sayfa max kodu
+    const MAX_PAGE_ITEMS = 4;
+
+
+
+    const getPaginationGroup = () => {
+        if (pageCount <= MAX_PAGE_ITEMS) {
+            return Array.from({ length: pageCount }, (_, index) => index);
+        }
+
+        const middleIndex = Math.floor(MAX_PAGE_ITEMS / 2);
+        const startPage =
+            pageIndex >= middleIndex
+                ? Math.min(pageCount - MAX_PAGE_ITEMS, pageIndex - middleIndex)
+                : 0;
+
+        return Array.from({ length: MAX_PAGE_ITEMS }, (_, index) => startPage + index);
+    };
     return (
         <div className={styles.tableBox}>
             <div >
@@ -71,32 +115,55 @@ const DataTable = ({ columns, data }) => {
                 })}
                 </tbody>
             </table>
-            <div>
+            <div className={styles.pageBox}>
                 <button onClick={() => previousPage()} disabled={!canPreviousPage}>
                     Previous
                 </button>
-                {Array.from({ length: pageCount }, (_, index) => (
-                    <button key={index} onClick={() => gotoPage(index)}>
-                        {index + 1}
+                {pageIndex > 0 && (
+                    <>
+                        <button onClick={() => gotoPage(0)}>1</button>
+                        {pageIndex > 1 && <span>...</span>}
+                    </>
+                )}
+                {getPaginationGroup().map(pageIdx => (
+                    <button
+                        key={pageIdx}
+                        onClick={() => gotoPage(pageIdx)}
+                        className={pageIndex === pageIdx ? 'active' : ''}
+                    >
+                        {pageIdx + 1}
                     </button>
                 ))}
+                {pageIndex < pageCount - 2 && (
+                    <>
+                        {pageIndex < pageCount - 3 && <span>...</span>}
+                        <button onClick={() => gotoPage(pageCount - 1)}>{pageCount}</button>
+                    </>
+                )}
                 <button onClick={() => nextPage()} disabled={!canNextPage}>
                     Next
                 </button>
+
+                {/*<button onClick={() => previousPage()} disabled={!canPreviousPage} className={styles.prev}>*/}
+                {/*    ≺*/}
+                {/*</button>*/}
+                {/*{Array.from({ length: pageCount }, (_, index) => (*/}
+                {/*    <button key={index} onClick={() => gotoPage(index)}*/}
+                {/*            className={pageIndex === index ? styles.buttonActive : ''}*/}
+                {/*    >*/}
+                {/*        {index + 1}*/}
+                {/*    </button>*/}
+                {/*))}*/}
+                {/*<button onClick={() => nextPage()} disabled={!canNextPage} className={styles.next}>*/}
+                {/*    ≻*/}
+                {/*</button>*/}
             </div>
             <div>
-                <div>
-                    Page{' '}
-                    <input
-                        type="number"
-                        value={pageIndex + 1}
-                        onChange={e => {
-                            const pageNumber = e.target.value ? Number(e.target.value) - 1 : 0;
-                            gotoPage(pageNumber);
-                        }}
-                    />{' '}
+                <p>
+                    Page
+                    {pageIndex + 1}
                     of {pageOptions.length}
-                </div>
+                </p>
                 <div>
                     Show{' '}
                     <select

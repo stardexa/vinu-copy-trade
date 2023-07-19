@@ -176,6 +176,13 @@ hr{
       background: #3F3137;
     }
   }
+  &-gray {
+    background: #27292F;
+    color: #99999F;
+    &:hover{
+      background: #27252F;
+    }
+  }
 
 }
 
