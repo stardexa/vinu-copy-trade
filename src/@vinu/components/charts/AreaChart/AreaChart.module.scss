@@ -1,0 +1,40 @@
+.boldCard{
+  background: var(--color-card);
+  border-radius: var(--border-d-radius);
+  padding: 1rem;
+  text-align: center;
+}
+.nameWrapped{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-items: center;
+  margin: auto;
+  img{
+    margin: 0.5rem 0;
+  }
+  h3{
+    line-height: 1;
+  }
+}
+.customPlusButton{
+  background: #27292F;
+  color: #99999F;
+  width: 26px;
+  border: none;
+  border-radius: var(--border-xs-radius);
+  &:hover{
+    background: #383B43;
+  }
+}
+.flexColumnStart{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: column;
+}
+.customCardWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+  grid-gap: 2em;
+}
