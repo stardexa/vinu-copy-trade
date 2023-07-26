@@ -1,4 +1,3 @@
-import {useTranslation} from 'next-i18next'
 import styles from './ElegantCard.module.scss'
 import Image from 'next/image';
 import BtcImg from '../../../../../public/assets/images/coin/btc.svg'
@@ -12,7 +11,6 @@ import LongGreenChart from '../../../../../public/assets/images/others/longGreen
 import GreenFire from '../../../../../public/assets/images/others/greenFire.svg'
 
 const ElegantCard = () => {
-    // const {t} = useTranslation('index')
     return (
         <>
             <div className="container">

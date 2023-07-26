@@ -1,4 +1,3 @@
-import {useTranslation} from 'next-i18next'
 import styles from './BoldCard.module.scss'
 import Image from 'next/image';
 import user1img from '../../../../../public/assets/images/profile/user1.svg'
@@ -10,7 +9,6 @@ import SoftChartGreen from '../../../../../public/assets/images/others/softChart
 import greenStar from '../../../../../public/assets/images/others/greenStar.svg'
 
 const BoldCard = () => {
-    // const {t} = useTranslation('index')
     return (
         <>
             <div className="container mt-3">

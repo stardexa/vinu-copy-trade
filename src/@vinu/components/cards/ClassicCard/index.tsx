@@ -1,4 +1,3 @@
-import {useTranslation} from 'next-i18next'
 import styles from './ClassicCard.module.scss'
 import Image from 'next/image';
 import user1img from '../../../../../public/assets/images/profile/user1.svg'
@@ -9,7 +8,6 @@ import SuccessChart from '../../../../../public/assets/images/others/successChar
 import GreenFire from '../../../../../public/assets/images/others/greenFire.svg'
 
 const ClassicCard = () => {
-    // const {t} = useTranslation('index')
     return (
         <>
             <div className="container">

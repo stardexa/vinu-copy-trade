@@ -1,0 +1,12 @@
+.cardChart{
+  background: var(--color-card);
+  border-radius: var(--border-d-radius);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+.customVerticalCard{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+  grid-gap: 1em;
+  margin-top: 2rem;
+}

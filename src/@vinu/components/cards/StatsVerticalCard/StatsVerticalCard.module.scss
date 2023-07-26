@@ -1,0 +1,25 @@
+.card{
+  background: var(--color-card);
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  padding: 1.2rem;
+  border-radius: var(--border-d-radius);
+  align-items: center;
+  .icons{
+    width: fit-content;
+    height: fit-content;
+    padding: 0.7rem;
+    line-height: 0;
+    background: #192939;
+    color: #0090FF;
+    border-radius: var(--border-xs-radius);
+    &[datatype="danger"]{
+      background: #332928;
+      color: #E58755;
+    }&[datatype="success"]{
+       background: #192939;
+       color: #0090FF;
+     }
+  }
+}
