@@ -12,12 +12,7 @@ const StatsHorizontalCard = ({color,title,value,percent}) => {
                     <p>{title}</p>
                     <div className={'flex-center gap-05'}>
                         <span className={'fw-700 text-s'}>{value}</span>
-                        {color == 'success' ? (
-                            <h4 className={'color-success'}>▲ {percent}%</h4>
-                        ):(
-
-                            <h4 className={'color-danger'}>▲ {percent}%</h4>
-                        )}
+                        <h4 className={color == 'success' ? 'color-success':'color-danger'}>▲ {percent}%</h4>
                     </div>
                 </div>
             </div>

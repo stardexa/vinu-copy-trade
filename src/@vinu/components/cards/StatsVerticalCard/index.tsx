@@ -5,14 +5,9 @@ const StatsVerticalCard = ({title,value,color}) => {
     return (
         <>
             <div className={styles.card}>
-
-                {
-                    color == "success" ? (
-                        <img src={`../../../../../../assets/images/others/blueStats.svg`} alt={''} />
-                    ):(
-                        <img src={`../../../../../../assets/images/others/orangeStats.svg`} alt={''} />
-                    )
-                }
+                <img src={color == 'success' ?
+                    '../../../../../../assets/images/others/blueStats.svg':
+                    '../../../../../../assets/images/others/orangeStats.svg' } alt={''} />
                 <div>
                     <p>{title}</p>
                     <div className={'flex-center gap-05'}>

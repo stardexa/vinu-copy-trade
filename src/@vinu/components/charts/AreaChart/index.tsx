@@ -38,6 +38,18 @@ const AreaChart = ({title,label,data1,data2}) => {
                 text: title,
             },
         },
+        scales: {
+            y: {
+                grid: {
+                    color: '#33363D', // for the grid lines
+                },
+            },
+            x: {
+                grid: {
+                    color: '#33363D', // for the grid lines
+                },
+            }
+        },
     };
 
     const labels = label;
@@ -51,6 +63,7 @@ const AreaChart = ({title,label,data1,data2}) => {
                 data: data1,
                 borderColor: 'rgb(255, 149, 92)',
                 backgroundColor: 'rgba(255, 149, 92, 0.2)',
+                borderWidth:2
             },
             {
                 fill: true,
@@ -58,6 +71,7 @@ const AreaChart = ({title,label,data1,data2}) => {
                 data: data2,
                 borderColor: 'rgb(53, 162, 235)',
                 backgroundColor: 'rgba(53, 162, 235, 0.2)',
+                borderWidth:2
             },
         ],
     };

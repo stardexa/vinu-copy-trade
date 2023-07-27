@@ -9,18 +9,15 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 const DonutChart = () => {
 
      const data = {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Red', 'Blue', 'Yellow'],
         datasets: [
             {
                 label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
+                data: [12, 19, 3],
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(255, 149, 92, 0.7)',
+                    'rgba(0, 144, 255, 0.7)',
+                    'rgba(255, 219, 110, 0.7)',
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 1)',
@@ -34,9 +31,17 @@ const DonutChart = () => {
             },
         ],
     };
+    const options = {
+        plugins: {
+            legend: {
+                position: 'top' as const,
+            },
+        },
+    };
+
     return (
         <>
-            <Doughnut data={data} />;
+            <Doughnut data={data} options={options} />
         </>
     );
  }
