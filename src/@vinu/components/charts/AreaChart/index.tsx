@@ -11,7 +11,7 @@ import {
     Filler,
     Legend,
 } from 'chart.js';
-import { Line } from 'react-chartjs-2';
+import {Bar, Line} from 'react-chartjs-2';
 
 ChartJS.register(
     CategoryScale,
@@ -33,10 +33,6 @@ const AreaChart = ({title,label,data1,data2}) => {
             legend: {
                 position: 'bottom' as const,
             },
-            title: {
-                display: true,
-                text: title,
-            },
         },
         scales: {
             y: {
@@ -50,6 +46,8 @@ const AreaChart = ({title,label,data1,data2}) => {
                 },
             }
         },
+
+        maintainAspectRatio: false
     };
 
     const labels = label;
@@ -78,7 +76,9 @@ const AreaChart = ({title,label,data1,data2}) => {
 
     return (
         <>
-            <Line options={options} data={data} />
+            <div style={{height:'400px'}}>
+                <Line options={options} data={data} />
+            </div>
         </>
     );
  }

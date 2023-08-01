@@ -3,4 +3,81 @@
   border-radius: var(--border-d-radius);
   margin-top: 1rem;
   padding: 2rem;
+  height: auto;
+  width: 100%;
 }
+.donutCard{
+  background: var(--color-card);
+  border-radius: var(--border-d-radius);
+  margin-top: 1rem;
+  padding: 2rem;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.stackedCard{
+  background: var(--color-card);
+  border-radius: var(--border-d-radius);
+  margin-top: 1rem;
+  padding: 2rem;
+  height: auto;
+  width: 100%;
+}
+.capBox{
+  display: flex;
+  gap: 1rem;
+}
+.orange{
+  width: 8px;
+  height: 8px;
+  background: orange;
+  border-radius: 50%;
+  display: block;
+}
+.primary{
+  width: 8px;
+  height: 8px;
+  background: #0865BC;
+  border-radius: 50%;
+  display: block;
+}
+.yellow{
+  width: 8px;
+  height: 8px;
+  background: #FFDB6E;
+  border-radius: 50%;
+  display: block;
+}
+.donutSubTitle{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  gap:1.4rem;
+  border-right: solid 1px #33363D;
+  padding: 0 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  &:nth-last-child(1){
+    border: none;
+  }
+}
+.iconBox{
+  background: #17334C;
+  border-radius: var(--border-d-radius);
+  width: fit-content;
+  padding: 1rem;
+  color: #0090FF;
+}
+.subArea{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  border-top:solid 1px #33363D;
+  padding-top:1.5rem;
+  }

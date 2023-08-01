@@ -6,7 +6,7 @@ import { Doughnut } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const DonutChart = () => {
+const GaugeDonutChart = () => {
 
      const data = {
         labels: ['Red', 'Blue', 'Yellow'],
@@ -28,6 +28,8 @@ const DonutChart = () => {
                     'rgba(255, 159, 64, 1)',
                 ],
                 borderWidth: 1,
+                circumference:180,
+                rotation:270
             },
         ],
     };
@@ -48,4 +50,4 @@ const DonutChart = () => {
         </>
     );
  }
-export default DonutChart
+export default GaugeDonutChart

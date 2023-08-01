@@ -27,7 +27,7 @@ const VerticalBarChart  = () => {
         responsive: true,
         plugins: {
             legend: {
-                position: 'top' as const,
+                position: 'bottom' as const,
             }
         },
          scales: {
@@ -40,8 +40,16 @@ const VerticalBarChart  = () => {
                  grid: {
                      display: false
                  }
+             },
+             r: {
+                 grid: {
+                     display: false
+                 }
              }
-         }
+         },
+
+         cutoutPercentage: 10,
+         maintainAspectRatio: false
     };
     // const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
     const labels = ['J', 'F', 'M', 'A', 'M', 'J', 'J'];
@@ -52,15 +60,20 @@ const VerticalBarChart  = () => {
             {
                 label: 'Dataset 2',
                 data: [31,42,35,34,41,27,11],
-                backgroundColor: 'rgba(53, 162, 235, 0.5)',
-                borderRadius:90,
+                backgroundColor: 'rgba(53, 162, 235, 1)',
+                borderRadius:200,
+                barThickness: 23,
+                maxBarThickness: 30,
+                barPercentage: 1,
+                categoryPercentage: 2,
+                order: 2,
             },
         ],
     };
 
     return (
         <>
-            <div style={{height:'600px'}}>
+            <div style={{height:'250px'}}>
                 <Bar options={options} data={data}     />
             </div>
         </>

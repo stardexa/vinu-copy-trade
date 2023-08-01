@@ -6,6 +6,9 @@
   padding: 1.5rem;
   border-radius: var(--border-d-radius);
   align-items: center;
+  min-width: 180px;
+  min-height: 210px;
+  justify-content: center;
   .icons{
     width: fit-content;
     height: fit-content;
