@@ -32,6 +32,7 @@ const GaugeDonutChart = () => {
                 rotation:270
             },
         ],
+
     };
     const options = {
         cutoutPercentage: 80,
@@ -44,8 +45,16 @@ const GaugeDonutChart = () => {
 
     return (
         <>
-            <div style={{height:'300px; margin:auto;'}}>
-                <Doughnut data={data} options={options} />
+            {/*<div style={{height:'300px; margin:auto;'}}>*/}
+            {/*    <Doughnut data={data} options={options} />*/}
+            {/*</div>*/}
+
+            <div style={{ width: '270px', height: '270px', position: 'relative'}}>
+                <Doughnut data={data} options={options}/>
+                <div style={{ position: 'absolute', width: '100%', top: '50%', left: 0, textAlign: 'center', marginTop: '5px',  lineHeight: '20px'}}>
+                    <h3>3.500</h3>
+                    <p className={'text-xxs'}>Total</p>
+                </div>
             </div>
         </>
     );

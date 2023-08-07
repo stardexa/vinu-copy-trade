@@ -9,6 +9,7 @@ import VerticalBarChart from "../../charts/VerticalBarChart";
 import {BsClipboard} from "react-icons/bs";
 import StackedBarChart from "../../charts/StackedBarChart";
 import GaugeDonutChart from "../../charts/GaugeDonutChart";
+import HorizontalBarChart from "../../charts/HorizontalBarChart";
 
 const Statistics = () => {
     return (
@@ -87,7 +88,6 @@ const Statistics = () => {
            </div>
 
            <div className={'card-wrapper-item-2'}>
-
                <div className={styles.donutCard}>
                    <h2 className={'mb-2'}>X Statistics</h2>
                    <StackedBarChart/>
@@ -103,10 +103,14 @@ const Statistics = () => {
                </div>
            </div>
 
-           <div className={'card-wrapper-item-2'}>
+           <div className={'d-flex'}>
                <div className={styles.donutCard}>
                     <GaugeDonutChart/>
                 </div>
+               <div className={styles.donutCard} style={{width:'100%'}}>
+                   <HorizontalBarChart/>
+                </div>
+
            </div>
        </>
     );
