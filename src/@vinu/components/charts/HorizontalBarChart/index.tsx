@@ -25,20 +25,25 @@ const HorizontalBarChart  = () => {
 
     const options = {
         indexAxis: 'y' as const,
-        elements: {
-            bar: {
-                borderSkipped:"middle",
-                borderWidth: 2,
-            },
-        },
         responsive: true,
+        cutoutPercentage: 90,
         plugins: {
             legend: {
                 position: 'bottom' as const,
             },
-            title: {
-                display: true,
-                text: 'Chart.js Horizontal Bar Chart',
+        },
+        scales: {
+            x: {
+                stacked: true,
+                grid: {
+                    color: '#292929', // for the grid lines
+                },
+            },
+            y: {
+                stacked: true,
+                grid: {
+                    display:false
+                },
             },
         },
     };
@@ -50,23 +55,35 @@ const HorizontalBarChart  = () => {
         datasets: [
             {
                 label: 'Dataset 1',
-                data: [31,42,35,34,41,27,37],
+                data: [-11,-22,-35,-44,-31,-27,-17],
                 borderColor: 'rgb(255, 99, 132)',
-                backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                backgroundColor: 'rgba(0, 144, 255, 0.7)',
+                borderRadius:90,
+                barThickness: 14,
+                maxBarThickness: 14,
+                barPercentage: 1,
+                categoryPercentage: 1,
+                order: 2
             },
             {
                 label: 'Dataset 2',
-                data: [31,42,35,34,41,27,37],
+                data: [11,22,35,44,31,27,17],
                 borderColor: 'rgb(53, 162, 235)',
-                backgroundColor: 'rgba(53, 162, 235, 0.5)',
+                backgroundColor:  'rgba(255, 149, 92, 0.7)',
+                borderRadius:90,
+                barThickness: 14,
+                maxBarThickness: 14,
+                barPercentage: 1,
+                categoryPercentage: 1,
+                order: 2
             },
         ],
     };
 
     return (
         <>
-            <div style={{height:'300px'}}>
-                <Bar options={options} data={data} />;
+            <div style={{width:'900px'}}>
+                <Bar options={options} data={data} />
             </div>
         </>
     );

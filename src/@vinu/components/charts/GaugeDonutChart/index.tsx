@@ -49,7 +49,7 @@ const GaugeDonutChart = () => {
             {/*    <Doughnut data={data} options={options} />*/}
             {/*</div>*/}
 
-            <div style={{ width: '270px', height: '270px', position: 'relative'}}>
+            <div style={{ width: '270px', height: '270px', position: 'relative', margin:'auto'}}>
                 <Doughnut data={data} options={options}/>
                 <div style={{ position: 'absolute', width: '100%', top: '50%', left: 0, textAlign: 'center', marginTop: '5px',  lineHeight: '20px'}}>
                     <h3>3.500</h3>

@@ -16,6 +16,17 @@
   justify-content: center;
   flex-flow: column;
 }
+.gaugeDonutCard{
+  background: var(--color-card);
+  border-radius: var(--border-d-radius);
+  margin-top: 1rem;
+  padding: 2rem;
+  width: 45%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
 
 .stackedCard{
   background: var(--color-card);
@@ -65,6 +76,19 @@
     border: none;
   }
 }
+.gaugeDonutSubTitle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:1.4rem;
+  padding:0 0 1rem 2rem;
+  margin-bottom: 1rem;
+  border-bottom: solid 1px #33363D;
+  &:nth-last-child(1){
+    border: none;
+  }
+}
+
 .iconBox{
   background: #17334C;
   border-radius: var(--border-d-radius);

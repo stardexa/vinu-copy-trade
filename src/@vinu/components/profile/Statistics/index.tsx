@@ -103,14 +103,27 @@ const Statistics = () => {
                </div>
            </div>
 
-           <div className={'d-flex'}>
-               <div className={styles.donutCard}>
+           <div className={'d-flex gap-1'}>
+               <div className={styles.gaugeDonutCard}>
+                   <h2 className={'mb-2'}>Sales</h2>
                     <GaugeDonutChart/>
+                   <div className={styles.gaugeDonutSubTitle}>
+                       <span className={styles.primary} />
+                       <p className={'text-xxs'}>Current Week</p>
+                       <h5>250</h5>
+                       <span className={'text-xxs color-success'}>4,5%</span>
+                   </div>
+                   <div className={styles.gaugeDonutSubTitle}>
+                       <span className={styles.orange} />
+                       <p className={'text-xxs'}>Current Week</p>
+                       <h5>250</h5>
+                       <span className={'text-xxs color-success'}>4,5%</span>
+                   </div>
                 </div>
                <div className={styles.donutCard} style={{width:'100%'}}>
+                   <h2 className={'mb-2'}>Y Analystics</h2>
                    <HorizontalBarChart/>
                 </div>
-
            </div>
        </>
     );
