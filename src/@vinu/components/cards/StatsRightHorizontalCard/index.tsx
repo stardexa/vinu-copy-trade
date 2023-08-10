@@ -3,7 +3,7 @@ import {BsArrowDown, BsCurrencyDollar} from 'react-icons/bs';
 import {IoStatsChart} from 'react-icons/io5';
 import {FaUserAlt} from 'react-icons/fa';
 
-const StatsRightHorizontalCard = ({color,title,icon,value,percent}) => {
+const StatsRightHorizontalCard = ({color,title,icon,value,percent}:any) => {
     return (
         <>
             <div className={styles.card}>

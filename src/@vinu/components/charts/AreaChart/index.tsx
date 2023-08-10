@@ -26,7 +26,7 @@ ChartJS.register(
 
 
 
-const AreaChart = ({title,label,data1,data2}) => {
+const AreaChart = ({title,label,data1,data2}:any) => {
     const options = {
         responsive: true,
         plugins: {

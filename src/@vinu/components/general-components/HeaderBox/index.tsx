@@ -4,7 +4,7 @@ import {useState} from "react";
 import Image from 'next/image';
 import GreenFireImg from '../../../../../public/assets/images/others/greenFire.svg'
 
-const HeaderBox = ({title,date}) => {
+const HeaderBox = ({title,date}:any) => {
 
     return (
         <>

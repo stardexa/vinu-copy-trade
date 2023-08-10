@@ -1,7 +1,7 @@
 import styles from './StatsVerticalCard.module.scss'
 import {BsArrowDown, BsArrowUp} from "react-icons/bs";
 
-const StatsVerticalCard = ({title,value,color}) => {
+const StatsVerticalCard = ({title,value,color}:any) => {
     return (
         <>
             <div className={styles.card}>

@@ -1,7 +1,8 @@
 import styles from './StatsHorizontalCard.module.scss'
 import {BsArrowDown, BsArrowUp} from 'react-icons/bs';
 
-const StatsHorizontalCard = ({color,title,value,percent}) => {
+
+const StatsHorizontalCard = ({color,title,value,percent}:any) => {
     return (
         <>
             <div className={styles.card}>

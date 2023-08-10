@@ -1,6 +1,6 @@
 import styles from './AddList.module.scss'
 
-const AddList = ({title})=> {
+const AddList = ({title}:any)=> {
     return (
         <>
             <button className={styles.addListButton}>

@@ -48,17 +48,17 @@
 import React, { useState } from 'react';
 import styles from './TabView.module.scss'
 
-function TabView({ data }) {
+function TabView({ data }:any) {
     const [activeTab, setActiveTab] = useState(0);
 
-    const handleTabClick = (index) => {
+    const handleTabClick = (index:any) => {
         setActiveTab(index);
     };
 
     return (
         <div className={'container mt-2'}>
             <div className={styles.tabButtons}>
-                {data.map((item, index) => (
+                {data.map((item:any, index:any) => (
                     <button
                         key={index}
                         className={index === activeTab ? styles.activeTab : ''}
