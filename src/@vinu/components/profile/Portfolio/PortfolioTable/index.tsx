@@ -1,6 +1,7 @@
 import {useTranslation} from 'next-i18next'
 import React, { useState } from 'react';
 import styles from './PortfolioTable.module.scss'
+import Image from "next/image";
 
 const PortfolioTable = () => {
     // const {t} = useTranslation('index')
@@ -52,7 +53,7 @@ const PortfolioTable = () => {
                             <tr key={item.id}>
                                 <td data-label="Market Name">
                                     <div className={styles.coinWrapped} >
-                                        <img src={`../../../../../../assets/images/coin/${item.img}.svg`} alt={item.name} />
+                                        <Image src={`../../../../../../assets/images/coin/${item.img}.svg`} alt={item.name} />
                                         <h4>{item.name} /</h4>
                                         <p className={'text-xxs'}>{item.type}</p>
                                     </div>

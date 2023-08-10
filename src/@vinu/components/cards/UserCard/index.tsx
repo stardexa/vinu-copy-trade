@@ -36,9 +36,9 @@ const UserCard = () => {
                             <div className={'between-center mt-05'}>
                                 <h4>Location</h4>
                                 <div className={'d-flex gap-05'}>
-                                    <img className={styles.flagObject}
+                                    <Image className={styles.flagObject}
                                          src={'https://raw.githubusercontent.com/hampusborgos/country-flags/ba2cf4101bf029d2ada26da2f95121de74581a4d/svg/tr.svg'}
-                                         height={10} width={20}/>
+                                         height={10} width={20} alt={''}/>
                                     <p>TR</p>
                                 </div>
                             </div>

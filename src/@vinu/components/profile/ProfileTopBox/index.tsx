@@ -38,7 +38,7 @@ const ProfileTopBox = ()=> {
                </div>
 
                 <div className={'flex-center gap-05'}>
-                    <img src={'https://raw.githubusercontent.com/hampusborgos/country-flags/ba2cf4101bf029d2ada26da2f95121de74581a4d/svg/tr.svg'} width={'20'}/>
+                    <Image alt={''} src={'https://raw.githubusercontent.com/hampusborgos/country-flags/ba2cf4101bf029d2ada26da2f95121de74581a4d/svg/tr.svg'} width={'20'}/>
                     Turkey
                 </div>
 
