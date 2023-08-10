@@ -82,7 +82,7 @@ const HorizontalBarChart  = () => {
 
     return (
         <>
-            <div style={{width:'900px'}}>
+            <div style={{width:'revert'}}>
                 <Bar options={options} data={data} />
             </div>
         </>
