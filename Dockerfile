@@ -10,8 +10,8 @@ RUN npm install
 
 COPY . /app/
 
-EXPOSE 4002
+EXPOSE 4004
 
 RUN npm run build
 
-CMD [ "npm", "start", "--", "--port", "4002"]
+CMD [ "npm", "start", "--", "--port", "4004"]

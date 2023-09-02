@@ -10,8 +10,8 @@ RUN npm install
 
 COPY . /app/
 
-EXPOSE 4002
+EXPOSE 4004
 
 RUN APP_ENV=preview npm run build
 
-CMD [ "npm", "run", "start:preview", "--", "--port", "4002" ]
+CMD [ "npm", "run", "start:preview", "--", "--port", "4004" ]
